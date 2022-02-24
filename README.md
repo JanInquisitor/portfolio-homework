@@ -12,8 +12,11 @@ git clone https://github.com/JanInquisitor/portfolio-homework
 
 ```
 
-## Contributing
-Anyone is welcome to contribute to this project and implement better refactoring practices
+## Deployed version
+
+Here is the [link](https://janinquisitor.github.io/portfolio-homework/) to the deployed application
+## Screenshot
+Anyone is welcome to contribute to this project and implement better refactoring practices.
 
 ## License
 [The Best One](https://www.google.com/)
