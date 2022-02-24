@@ -5,7 +5,7 @@
 This is a portfolio made with HTML/CSS and flexbox!
 
 ## Installation
-You can clone the project from the official[repository](https://github.com/JanInquisitor/portfolio-homework)
+You can clone the project from the official [repository](https://github.com/JanInquisitor/portfolio-homework)
 ```bash
 
 git clone https://github.com/JanInquisitor/portfolio-homework
