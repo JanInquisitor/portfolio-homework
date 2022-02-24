@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,500;1,600&display=swap");
+:root {
+  --color-primary: #323031;
+  --color-primary-light: #2274a5;
+  --color-primary-dark: #7f7979;
+  --color-4: #5dd39e;
+  --grey-light: #c1bdb3;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif, serif;
+  font-weight: 400;
+  list-style: 1.6;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: whitesmoke;
+}
+
+.content {
+  height: 50rem;
+}
+
+.about-me {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.title-box {
+  /* background-color: #2274a5; */
+  flex: 1;
+  margin-right: 2rem;
+  padding: 0 0;
+  display: flex;
+  border-right: 4px solid var(--color-4);
+
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.title-box h2 {
+  font-size: 5rem;
+  margin-right: 1rem;
+  font-family: inherit;
+  padding: 2rem 0;
+  color: var(--color-4);
+}
+
+.text-box {
+  width: 70%;
+}
+
+.text-box p {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 2rem;
+}
+
+.my-work {
+  margin-top: 5rem;
+  display: flex;
+}
+
+.card-box {
+  width: 70%;
+  display: flex;
+}
+
+.card {
+  height: 15rem;
+  width: 20rem;
+  margin: 1rem;
+  transition: all 0.3s ease 0s;
+  display: flex;
+
+  box-shadow: var(--shadow-dark);
+}
+
+.card:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.card:hover {
+  transform: scale(1);
+}
+
+.card img {
+  border: 2px solid;
+  height: 15rem;
+  width: 20rem;
+  border: 5px solid var(--color-4);
+}
+
+.card p {
+  font-size: 16px;
+}
+
+.contact-me {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.contact-box {
+  width: 70%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact-me p {
+  font-size: 2rem;
+  color: var(--color-primary);
+  border-bottom: 3px solid var(--color-4);
+}
+
+.footer {
+  background-color: var(--color-primary);
+  height: 8rem;
+  box-shadow: 0 50vh 0 50vh var(--color-primary);
+}
+
+.nav-bar {
+  font-size: 1.7rem;
+  height: 8rem;
+  background-color: var(--color-primary);
+  border-bottom: 1px solid var(--color-grey-light-2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.nav-bar__heading-box {
+  font-size: 3rem;
+  color: var(--color-4);
+  padding: 0.7rem 2rem;
+}
+
+.nav-bar__portfolio-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.7rem;
+}
+
+.nav-bar__item {
+  padding: 0 2rem;
+  color: var(--color-4);
+  /* border-bottom: 1px solid var(--color-4); */
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.nav-bar__item:hover {
+  color: #b7f7da;
+}
+
+.nav-bar__item:not(:first-child) {
+  margin-left: 1rem;
+}
+
+.heading-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-image: url(../img/img1.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  height: 30rem;
+  border-bottom: 1px solid var(--shadow-dark);
+}
+
+.heading-box__main {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  margin-top: 5rem;
+  margin-right: 5rem;
+}
+
+.heading-box__sub {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+}
+
+.heading-box__content-main {
+  font-size: 7rem;
+  color: var(--grey-light);
+}
+
+.heading-box__content-sub {
+  font-size: 8rem;
+  color: var(--grey-light);
+}
